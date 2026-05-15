@@ -149,7 +149,6 @@ if uploaded_file:
         return Border(left=s, right=s, top=s, bottom=s)
 
     def _write_sheet(wb, title, dataframe, header_color="1F4E79", num_cols=None):
-        """Write a dataframe to a new sheet with professional formatting."""
         ws = wb.create_sheet(title)
         num_cols = num_cols or []
 
